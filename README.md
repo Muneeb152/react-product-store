@@ -15,8 +15,8 @@ This is a simple React application that displays products on the home page using
 ### 1️⃣ Clone the Repository
 
 ```sh
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/Muneeb152/react-product-store
+cd react-product-store
 ```
 
 ### 2️⃣ Install Dependencies
