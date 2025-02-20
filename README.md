@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# React Product Store
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple React application that displays products on the home page using React Router.
 
-## Available Scripts
+## 🛠️ Features
 
-In the project directory, you can run:
+- Product listing on the home page (`/`)
+- React Router integration for navigation
+- Layout component for consistent UI structure
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 Getting Started
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 1️⃣ Clone the Repository
 
-### `npm test`
+```sh
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 2️⃣ Install Dependencies
 
-### `npm run build`
+```sh
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 3️⃣ Start the Development Server
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```sh
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The app will be available at `http://localhost:3000/`
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📂 Project Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+/src
+  ├── components
+  │     ├── Layout.js      (Global Layout with Drawer)
+  │     ├── ProductList.js (Component to fetch & display products)
+  │     ├── ProductCard.js (Component for a single product)
+  │
+  ├── pages
+  │     ├── Home.js        (Home page displaying products)
+  │
+  ├── App.js               (Entry point)
+  ├── index.js             (Main entry point to render React app)
+  ├── README.md            (Project documentation)
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🏗️ How It Works
 
-## Learn More
+1. The `App.js` file sets up React Router and wraps all routes inside a `Layout` component.
+2. The `Layout.js` file provides a consistent UI and Sidebar.
+3. The `Home.js` page fetches and displays a list of products using `ProductList.js`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📦 Building for Production
 
-### Code Splitting
+To create an optimized build of the project, run:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```sh
+npm run build
+```
 
-### Analyzing the Bundle Size
+This will generate a `build/` folder containing minified production-ready assets.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## ❓ Troubleshooting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+If you encounter issues while running the app:
 
-### Advanced Configuration
+1. Ensure you have the latest stable version of **Node.js** and **npm** installed.
+2. Run `npm install` again to check for missing dependencies.
+3. Check the console for errors and troubleshoot accordingly.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 📜 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is open-source and available under the [MIT License](LICENSE).
